@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="moviePuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the movie name?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-cF-X8y">
+                                <rect key="frame" x="48" y="270" width="297" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0Ep-b3-Mqi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-2I-3Py">
+                                <rect key="frame" x="70" y="510" width="253" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Q93-zw-ICg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to see answer" titleAlignment="center">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQ5-EO-aBK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🕷️👨🏻" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-Dt-ee5">
+                                <rect key="frame" x="142.66666666666666" y="396" width="108" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fk-HD-PCx">
+                                <rect key="frame" x="154" y="617" width="115" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="D6m-m7-CF2"/>
+                                    <constraint firstAttribute="height" constant="32" id="W2c-iB-a94"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.7098287260498628" green="0.67202307676937767" blue="0.94980844947480669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rvt-2I-3Py" firstAttribute="top" secondItem="s5f-Dt-ee5" secondAttribute="bottom" constant="54" id="4Eq-pI-vdM"/>
+                            <constraint firstAttribute="bottom" secondItem="rvt-2I-3Py" secondAttribute="bottom" constant="296" id="BJS-Vf-LiK"/>
+                            <constraint firstItem="rvt-2I-3Py" firstAttribute="centerX" secondItem="8fk-HD-PCx" secondAttribute="centerX" constant="-15" id="Eim-J4-DI3"/>
+                            <constraint firstItem="eVF-cF-X8y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="211" id="JzJ-JY-onV"/>
+                            <constraint firstItem="rvt-2I-3Py" firstAttribute="centerX" secondItem="eVF-cF-X8y" secondAttribute="centerX" id="MuK-K7-Boo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fk-HD-PCx" secondAttribute="trailing" constant="124" id="Pk2-7L-am4"/>
+                            <constraint firstItem="eVF-cF-X8y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="YuG-kG-ktk"/>
+                            <constraint firstItem="8fk-HD-PCx" firstAttribute="top" secondItem="rvt-2I-3Py" secondAttribute="bottom" constant="61" id="ZTd-0u-b9A"/>
+                            <constraint firstItem="8fk-HD-PCx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="15" id="jcI-ap-2xj"/>
+                            <constraint firstItem="rvt-2I-3Py" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="s0l-vI-TDC"/>
+                            <constraint firstItem="rvt-2I-3Py" firstAttribute="centerX" secondItem="s5f-Dt-ee5" secondAttribute="centerX" id="saI-kr-Pj9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="8fk-HD-PCx" id="3TR-UZ-Ugz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>
